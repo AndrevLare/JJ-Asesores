@@ -1,12 +1,13 @@
-- About -
-- Contacto
+- Logo JJ
+- Nav
+- About
 - Sevicios
-- Footer
-- media queris
 - Metadatos
+- Contacto
+- Footer
 - Google keyword Planner, SEMrush
 - Google analytics
-- redireccion 301
+
 
 
 SEO Tecnico:

@@ -16,17 +16,17 @@ body {
 /* Nav */
 .nav {
   display: flex;
-  background: #00333a;
+  background: #1b1c1c;
   color: #fff;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  height: 8vh;
+  height: 9vh;
   font-size: 5vh;
-  border-bottom: #c0feff solid 4px;
+  border-bottom: #4f7d79 solid 0.5vh;
 }
 .header__nav--logo {
-  height: 10vh;
+  margin: 1.5vh;
+  height: 9vh;
 }
 
 /* boton menu */
@@ -68,7 +68,7 @@ body {
   animation-fill-mode: forwards;
 }
 .header__nav__menuBars--bar {
-  background-color: #008a91;
+  background-color: #699893;
   display: inline-block;
   width: 5vh;
   height: 0.7vh;
@@ -89,13 +89,13 @@ body {
   transition: transform 200ms ease-out;
 }
 .header__ul :last-child button {
-  border-bottom-left-radius: 2vh;
-  border-bottom-right-radius: 2vh;
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
 }
 .header__ul li button {
   border: none;
   outline: none;
-  background-color: #00333a;
+  background-color: #1b1c1c;
   color: #fff;
   font-family: "Comfortaa", sans-serif;
   margin: 0 0;
@@ -112,12 +112,64 @@ body {
 }
 
 /* Main */
-
 .main {
-  height: 100vh;
+  height: 115vh;
+}
+.main--span {
+  position: absolute;
+  height: 95vh;
+  width: 100%;
   background-image: url("../img/Sample0.jpg");
+  z-index: -1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: brightness(50%);
+}
+.main__div {
+  margin: 0;
+  filter: brightness(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 55%;
+  justify-content: space-between;
+}
+.main__div--h1 {
+  font-size: 6vh;
+  color: #f5f6f6;
+  margin: 0;
+  padding: 3vh 3vh 0 3vh;
+  text-align: center;
+}
+.main__div--h3 {
+  font-size: 2vh;
+  color: #f5f6f6;
+  margin: 0;
+  text-align: center;
+}
+.main__div--p {
+  font-size: 2.5vh;
+  color: #f5f6f6;
+  margin: auto 2vh;
+  text-align: start;
+}
+.main__div1--span,
+.main__div1--i {
+  color: #f5f6f6;
+  text-align: center;
+  display: block;
+  z-index: 100;
+}
+.main__div1--i {
+  font-size: 20vh;
+  margin-bottom: 1vh;
+}
+.main__div1--span{
+  font-size: 2.5vh;
+  font-weight: bolder;
+}
+.main__div1--span span{
+  font-size: 4vh;
 }
