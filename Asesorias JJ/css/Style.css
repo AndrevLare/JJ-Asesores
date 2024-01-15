@@ -1,43 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
-body{
-    margin: 0;
-    font-family: 'Comfortaa', sans-serif;
-    max-width: 100%;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap");
+/* General */
+body {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.nav{
-    display: flex;
-    background: #003904;
-    color: #fff;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    height: 5vh;
-    font-size: 2vh;
-    border-bottom: #045103 solid 2px;
+/* Nav */
+.nav {
+  display: flex;
+  background: #00333a;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 8vh;
+  font-size: 5vh;
+  border-bottom: #c0feff solid 4px;
 }
-.header__ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+
+/* boton menu */
+.header__nav__menuBars {
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9vh;
+  margin: 0 1.5vh;
+}
+.menuActive0 {
+  transform-origin: right;
+  animation: openMenu0 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuActive1 {
+  animation: openMenu1 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuActive2 {
     transform-origin: right;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    color: #fff;
+  animation: openMenu2 200ms ease-in-out;
+  animation-fill-mode: forwards;
 }
-.header__ul :last-child{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+.menuInactive0 {
+  transform-origin: right;
+  animation: closeMenu0 200ms ease-in-out;
+  animation-fill-mode: forwards;
 }
-.header__ul li{
-    background-color: #003904;
-    margin: 0 0;
-    font-size: 4vw;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 1.5vh 0;
-    border-bottom: #045103 solid 2px;
+.menuInactive1 {
+  animation: closeMenu1 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuInactive2 {
+  transform-origin: right;
+  animation: closeMenu2 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.header__nav__menuBars--bar {
+  background-color: #008a91;
+  display: inline-block;
+  width: 5vh;
+  height: 0.7vh;
+  border-radius: 10px;
+}
+
+/* Menu */
+.header__ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  transform-origin: top;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transform: scale(1, 0);
+  transition: transform 200ms ease-out;
+}
+.header__ul :last-child button {
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+}
+.header__ul li button {
+  border: none;
+  outline: none;
+  background-color: #00333a;
+  color: #fff;
+  font-family: "Comfortaa", sans-serif;
+  margin: 0 0;
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3.5vh 0;
+  border-bottom: #81faff solid 3px;
+  transition: background-color 100ms ease;
+}
+.header__ul li button:active {
+  background-color: #006a72;
 }

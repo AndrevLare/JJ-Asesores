@@ -1,0 +1,41 @@
+/* menu */
+@keyframes openMenu0{
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+@keyframes openMenu1{
+    100%{
+        opacity: 0%;
+    }
+}
+@keyframes openMenu2{
+    100%{
+        transform: rotate(40deg);
+    }
+}
+
+@keyframes closeMenu0{
+    0%{
+        transform: rotate(-40deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes closeMenu1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes closeMenu2{
+    0%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
