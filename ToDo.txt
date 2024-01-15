@@ -1,4 +1,3 @@
-- About -
 - Contacto
 - Sevicios
 - Footer
@@ -7,6 +6,12 @@
 - Google keyword Planner, SEMrush
 - Google analytics
 - redireccion 301
+
+
+NAV:
+Contacto
+servicios
+
 
 
 SEO Tecnico:
