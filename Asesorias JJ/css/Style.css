@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav{
+    display: flex;
+    background: #003904;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 5vh;
+    font-size: 2vh;
+    border-bottom: #045103 solid 2px;
+}
+.header__ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    transform-origin: right;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+.header__ul :last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.header__ul li{
+    background-color: #003904;
+    margin: 0 0;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5vh 0;
+    border-bottom: #045103 solid 2px;
+}
