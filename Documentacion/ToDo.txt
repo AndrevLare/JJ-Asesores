@@ -1,12 +1,16 @@
-- Logo JJ
-- Nav
-- About
-- Sevicios
-- Metadatos
 - Contacto
+- Sevicios
 - Footer
+- media queris
+- Metadatos
 - Google keyword Planner, SEMrush
 - Google analytics
+- redireccion 301
+
+
+NAV:
+Contacto
+servicios
 
 
 
