@@ -1,7 +1,7 @@
 /* menu */
 @keyframes openMenu0{
     100%{
-        transform: rotate(-40deg);
+        transform: rotate(-43deg);
     }
 }
 @keyframes openMenu1{
@@ -11,13 +11,13 @@
 }
 @keyframes openMenu2{
     100%{
-        transform: rotate(40deg);
+        transform: rotate(43deg);
     }
 }
 
 @keyframes closeMenu0{
     0%{
-        transform: rotate(-40deg);
+        transform: rotate(-43deg);
     }
     100%{
         transform: rotate(0);
@@ -33,7 +33,7 @@
 }
 @keyframes closeMenu2{
     0%{
-        transform: rotate(40deg);
+        transform: rotate(43deg);
     }
     100%{
         transform: rotate(0);

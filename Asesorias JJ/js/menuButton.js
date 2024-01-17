@@ -18,15 +18,24 @@ switchMenu = ()=> {
   menu.style.transform = active ? "scale(1, 0)" : "scale(1, 1)";
   active = !active;
 }
+
+
 // botones
 const options = document.querySelectorAll(".header__ul--button"); // lista de las 3 opciones
-const sections = [document.getElementById("quienSoy")];
+const sections = [
+  document.getElementById("quienSoy"),
+  document.getElementById("contact")
+];
 
 function scrollToSection(section) {
-    section.scrollIntoView({ behavior: 'smooth' , block: "end"});
+  section.scrollIntoView({ behavior: 'smooth', block: "center" });
 }
 
 options[0].addEventListener("click", () => {
   scrollToSection(sections[0]);
+  switchMenu();
+});
+options[1].addEventListener("click", () => {
+  scrollToSection(sections[1]);
   switchMenu();
 });

@@ -1,5 +1,6 @@
-- Contacto
+- Contacto -
 - Sevicios
+- Quien soy
 - Footer
 - media queris
 - Metadatos
@@ -9,7 +10,6 @@
 
 
 NAV:
-Contacto
 servicios
 
 
