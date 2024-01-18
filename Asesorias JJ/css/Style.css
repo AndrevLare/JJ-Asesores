@@ -5,16 +5,32 @@ body {
   font-family: "Comfortaa", sans-serif;
   max-width: 100%;
   overflow-x: hidden;
-  height: 300vh;
 }
+
+/* Reutilizable */
+.main__div--hr,
+.about--hr {
+  border: #f5f6f6 solid 0.13rem;
+  width: 65vw;
+  border-radius: 1rem;
+}
+.contact--h3,
+.about--h3 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #f5f6f6;
+}
+
+/* Nav */
 
 .header {
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-/* Nav */
 .nav {
+  z-index: 20;
   display: flex;
   background: #1b1c1c;
   color: #fff;
@@ -43,7 +59,7 @@ body {
   background-color: #699893;
   display: inline-block;
   width: 2.5rem;
-  height: .35rem;
+  height: 0.35rem;
   border-radius: 10px;
 }
 .menuActive0 {
@@ -149,10 +165,11 @@ body {
   margin: 0;
   text-align: center;
 }
+
 .main__div--p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #f5f6f6;
-  margin: auto 2vh;
+  margin: auto 1.5rem;
   text-align: start;
   max-width: 700px;
 }
@@ -167,32 +184,26 @@ body {
   font-size: 11rem;
   margin-bottom: 1vh;
 }
-.main__div1--span{
+.main__div1--span {
   font-size: 1.5rem;
   font-weight: bolder;
 }
-.main__div1--span span{
+.main__div1--span span {
   font-size: 2rem;
 }
 
-
 /* Contacto*/
-.contact{
+.contact {
   background: linear-gradient(to bottom, #4e504f, #3c3d3d);
   padding-top: 2rem;
 }
 
-.contact--h3 {
-  margin: 0 0 2rem 0;
-  font-size: 2rem;
-  text-align: center;
-  color: #f5f6f6;
-}
-.contact p, .contact button{
+.contact p,
+.contact button {
   display: inline-block;
   font-size: 1rem;
 }
-.contact div p{
+.contact div p {
   width: 60vw;
   padding: 0.5rem;
   margin-left: 1rem;
@@ -202,7 +213,7 @@ body {
   border-radius: 0.4rem;
   transition: all 0.5s;
 }
-.contact div button{
+.contact div button {
   background: none;
   color: #f5f6f6;
   border-radius: 0.4rem;
@@ -213,12 +224,49 @@ body {
   border: #1b1c1c solid 2px;
   transition: background-color 100ms ease;
 }
-.contact div button:active{
+.contact div button:active {
   background-color: #3c3d3d;
 }
-.contact--p{
+.contact--p {
   width: 100%;
   text-align: center;
   margin-top: auto;
-  color: #868a89
+  color: #868a89;
+}
+.fa-check {
+  animation: contactCheck 1000ms ease-in-out;
+}
+
+/* About */
+.about{
+  height: 45rem;
+}
+.about--span {
+  position: absolute;
+  height: 35rem;
+  width: 100%;
+  background-image: url("../img/Sample1.jpg");
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+}
+.about--h3{
+  padding-top: 2rem;
+  margin: 0;
+}
+.about--hr {
+  width: 40vw;
+}
+.about__div{
+  display: flex;
+  justify-content: center;
+}
+.about__div--p{
+  font-size: 1.4rem;
+  color: #f5f6f6;
+  margin: 1.5rem;
+  text-align: start;
+  max-width: 700px;
 }

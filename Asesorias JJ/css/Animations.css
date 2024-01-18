@@ -1,41 +1,42 @@
 /* menu */
-@keyframes openMenu0{
-    100%{
-        transform: rotate(-43deg);
-    }
+@keyframes openMenu0 {
+  100% {
+    transform: rotate(-43deg);
+  }
 }
-@keyframes openMenu1{
-    100%{
-        opacity: 0%;
-    }
+@keyframes openMenu1 {
+  100% {
+    opacity: 0%;
+  }
 }
-@keyframes openMenu2{
-    100%{
-        transform: rotate(43deg);
-    }
+@keyframes openMenu2 {
+  100% {
+    transform: rotate(43deg);
+  }
 }
 
-@keyframes closeMenu0{
-    0%{
-        transform: rotate(-43deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
+@keyframes closeMenu0 {
+  0% {
+    transform: rotate(-43deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
-@keyframes closeMenu1{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 100%;
-    }
+@keyframes closeMenu1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
-@keyframes closeMenu2{
-    0%{
-        transform: rotate(43deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
+@keyframes closeMenu2 {
+  0% {
+    transform: rotate(43deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
+
