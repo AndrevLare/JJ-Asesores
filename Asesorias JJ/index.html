@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>JJ Asesores</title>
+
+    <!-- matadatos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JJ Asesores</title>
-    <script
-      src="https://kit.fontawesome.com/4271bf6616.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- links -->
+    <link rel="icon" href="img/LogoIcon.ico" />
     <link rel="stylesheet" href="css/Animations.css" />
     <link rel="stylesheet" href="css/Style.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <nav class="nav">
         <img
@@ -33,6 +35,7 @@
       </ul>
     </header>
 
+    <!-- main -->
     <main class="main">
       <img
         class="main--sample"
@@ -63,15 +66,19 @@
       </div>
     </main>
 
+    <!-- contacto -->
     <section class="contact">
-      <h3 class="contact--h3" id="contact">Contactame</h3>
+      <div class="contact__div">
+        <h3 class="contact--h3" id="contact">Contactame</h3>
+        <hr class="contact__div--hr">
+      </div>
       <div class="contact__email">
         <p class="contact__email--p">servicio@asesoriasjj.com</p>
         <button class="contact__email--gmail" id="contactButtonMail">
           <i class="fa-solid fa-envelope"></i>
         </button>
         <button class="contact__email--copy" id="contactButtonCopyMail">
-          <i class="fa-solid fa-copy"></i>
+          <i class="fa-solid fa-copy" hidden=" "></i>
         </button>
       </div>
       <div class="contact__phone">
@@ -81,9 +88,9 @@
         </button>
       </div>
       <p class="contact--p">Horario: 8:30am - 7:00pm</p>
-      <script src="js/contactButtons.js"></script>
     </section>
 
+    <!-- quien soy -->
     <section class="about" id="quienSoy">
       <span class="about--span"></span>
       <h3 class="about--h3">¿Quien Soy?</h3>
@@ -104,6 +111,100 @@
       </div>
     </section>
 
+    <!-- servicios -->
+    <section class="services">
+      <h3 class="services--h3" id="services">Servicios</h3>
+      <hr class="services--hr" />
+      <div class="services__div0">
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-magnifying-glass"></i>
+            <h2 class="services__div0__div__button--h2">Revisoria Fiscal</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-gears"></i>
+            <h2 class="services__div0__div__button--h2">Auditoria de Control</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-globe"></i>
+            <h2 class="services__div0__div__button--h2">Auditoria Externa</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-folder-open"></i>
+            <h2 class="services__div0__div__button--h2">Auditoria Tributaria</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-briefcase"></i>
+            <h2 class="services__div0__div__button--h2">Nomina</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-file"></i>
+            <h2 class="services__div0__div__button--h2">Declaraciones Tributarias</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-person-chalkboard"></i>
+            <h2 class="services__div0__div__button--h2">Contabilidad Outsourcing</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-house-user"></i>
+            <h2 class="services__div0__div__button--h2">Contabilidad Outsourcing in Home</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-compact-disc"></i>
+            <h2 class="services__div0__div__button--h2">Medios Magneticos</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-building"></i>
+            <h2 class="services__div0__div__button--h2">Supersociedades</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-magnifying-glass-chart"></i>
+            <h2 class="services__div0__div__button--h2">Implementacion NIIF</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-chart-line"></i>
+            <h2 class="services__div0__div__button--h2">Informes DANE</h2>
+          </button>
+        </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-desktop"></i>
+            <h2 class="services__div0__div__button--h2">Documentos Electronicos DIAN</h2>
+          </button>
+        </div>
+      </div>
+      <div class="servces__div1"></div>
+    </section>
+
+    
+    <!-- scripts -->
     <script src="js/menuButton.js"></script>
+    <script src="js/contactButtons.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4271bf6616.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

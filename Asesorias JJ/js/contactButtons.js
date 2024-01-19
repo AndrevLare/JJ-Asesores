@@ -1,3 +1,4 @@
+//Variables
 const Buttons = [
   document.getElementById("contactButtonMail"),
   document.getElementById("contactButtonCopyMail"),
@@ -25,27 +26,32 @@ const animationProperties = {
   easing: "ease-in-out",
 };
 
-
 Buttons[0].addEventListener("click", () => {
   let link = `mailto:servicio@asesoriasjj.com?`;
   Buttons[0].animate(copyAnimation, animationProperties);
   window.open(link, "_black");
 });
 
-Buttons[1].addEventListener("click", () => {
-  navigator.clipboard.writeText("servicio@asesoriasjj.com");
-  Buttons[1].children[0].classList.replace("fa-copy", "fa-check");
-  const animation = Buttons[1].animate(copyAnimation, animationProperties);
-  animation.addEventListener("finish", () => {
-    Buttons[1].children[0].classList.replace("fa-check", "fa-copy");
-  });
-});
+const handleClipboardButtonClick = async (buttonIndex, textToCopy) => {
+  try {
+    await navigator.clipboard.writeText(textToCopy);
+    Buttons[buttonIndex].children[0].classList.replace("fa-copy", "fa-check");
 
-Buttons[2].addEventListener("click", () => {
-  navigator.clipboard.writeText("3166905094");
-  Buttons[2].children[0].classList.replace("fa-copy", "fa-check");
-  const animation = Buttons[2].animate(copyAnimation, animationProperties);
-  animation.addEventListener("finish", () => {
-    Buttons[2].children[0].classList.replace("fa-check", "fa-copy");
-  });
-});
+    const animation = Buttons[buttonIndex].animate(copyAnimation, animationProperties);
+    await animation.finished;
+
+    Buttons[buttonIndex].children[0].classList.replace("fa-check", "fa-copy");
+  } catch (error) {
+    console.error("Error al copiar al portapapeles:", error);
+    Buttons[buttonIndex].children[0].classList.replace("fa-copy", "fa-x");
+
+    const animation = Buttons[buttonIndex].animate(copyAnimation, animationProperties);
+    await animation.finished;
+
+    Buttons[buttonIndex].children[0].classList.replace("fa-x", "fa-copy");
+  }
+};
+
+Buttons[1].addEventListener("click", () => handleClipboardButtonClick(1, "servicio@asesoriasjj.com"));
+Buttons[2].addEventListener("click", () => handleClipboardButtonClick(2, "3166905094"));
+

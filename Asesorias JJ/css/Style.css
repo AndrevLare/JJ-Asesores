@@ -9,15 +9,16 @@ body {
 
 /* Reutilizable */
 .main__div--hr,
-.about--hr {
+.about--hr,
+.services--hr,
+.contact__div--hr {
   border: #f5f6f6 solid 0.13rem;
-  width: 65vw;
   border-radius: 1rem;
 }
 .contact--h3,
-.about--h3 {
-  margin: 0 0 2rem 0;
-  font-size: 2rem;
+.about--h3,
+.services--h3 {
+  font-size: 3rem;
   text-align: center;
   color: #f5f6f6;
 }
@@ -165,7 +166,9 @@ body {
   margin: 0;
   text-align: center;
 }
-
+.main__div--hr {
+  width: 16rem;
+}
 .main__div--p {
   font-size: 1.4rem;
   color: #f5f6f6;
@@ -179,6 +182,11 @@ body {
   text-align: center;
   display: block;
   z-index: 100;
+}
+.main__div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main__div1--i {
   font-size: 11rem;
@@ -194,10 +202,22 @@ body {
 
 /* Contacto*/
 .contact {
-  background: linear-gradient(to bottom, #4e504f, #3c3d3d);
-  padding-top: 2rem;
+  background: linear-gradient(315deg, #283938, #345150);
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.contact--h3{
+  margin: 2rem 0 auto 0;
+}
+.contact__div {
+  margin-bottom: auto;
+}
+.contact__div--hr{
+  width: 17rem;
+}
 .contact p,
 .contact button {
   display: inline-block;
@@ -206,19 +226,17 @@ body {
 .contact div p {
   width: 60vw;
   padding: 0.5rem;
-  margin-left: 1rem;
   color: #aeb2b2;
-  background-color: #3c3d3d;
+  background-color: #283938;
   border: #1b1c1c solid 2px;
   border-radius: 0.4rem;
   transition: all 0.5s;
 }
 .contact div button {
-  background: none;
+  background: #283938;
   color: #f5f6f6;
   border-radius: 0.4rem;
   width: 2.5rem;
-  margin-left: 0.5rem;
   padding: 0.5rem;
   text-align: center;
   border: #1b1c1c solid 2px;
@@ -229,21 +247,23 @@ body {
 }
 .contact--p {
   width: 100%;
-  text-align: center;
   margin-top: auto;
+  text-align: center;
   color: #868a89;
 }
 .fa-check {
   animation: contactCheck 1000ms ease-in-out;
 }
-
 /* About */
-.about{
+.about {
   height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .about--span {
   position: absolute;
-  height: 35rem;
+  height: 45rem;
   width: 100%;
   background-image: url("../img/Sample1.jpg");
   z-index: -1;
@@ -252,21 +272,53 @@ body {
   background-repeat: no-repeat;
   filter: brightness(50%);
 }
-.about--h3{
+.about--h3 {
   padding-top: 2rem;
   margin: 0;
 }
 .about--hr {
-  width: 40vw;
+  width: 17rem;
 }
-.about__div{
+.about__div {
   display: flex;
   justify-content: center;
+  margin-block: auto;
 }
-.about__div--p{
+.about__div--p {
   font-size: 1.4rem;
   color: #f5f6f6;
   margin: 1.5rem;
   text-align: start;
   max-width: 700px;
+}
+
+/* Servicios */
+.services {
+  background: linear-gradient(315deg, #283938, #345150);
+  display: flex;
+  flex-direction: column;
+}
+.services--h3 {
+  padding-top: 2rem;
+  margin: 0;
+}
+.services--hr {
+  width: 12.5rem;
+}
+.services__div0{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+.services__div0__div__button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Puedes ajustar el color de fondo según tus preferencias */
+  border: 1px solid #ccc; /* Añade un borde opcional */
+  border-radius: 8px; /* Añade esquinas redondeadas opcionales */
 }

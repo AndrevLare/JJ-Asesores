@@ -1,12 +1,30 @@
-// Menu button
+// Variables
+const button = document.querySelector(".header__nav__menuBars");        //Contenedor barras y boton
+const bars = document.querySelectorAll(".header__nav__menuBars--bar");  // lista con las 3 barras
+const barsArray = [...bars];                                            // conversion de la lista bars a array
+const menu = document.querySelector(".header__ul");                     //objeto de la lista del menu
+let active = false;                                                     //Bool menu activado
+const options = document.querySelectorAll(".header__ul--button");       // array de las 3 opciones
+const sections = [                                                      // array de las 3 secciones (id)
+  document.getElementById("quienSoy"),
+  document.getElementById("contact"),
+  document.getElementById("services")
+];
 
-const button = document.querySelector(".header__nav__menuBars"); //Contenedor barras y boton
-const bars = document.querySelectorAll(".header__nav__menuBars--bar"); // lista con las 3 barras
-const menu = document.querySelector(".header__ul"); //objeto de la lista del menu
-let active = false;
+document.addEventListener("click", (event) => {
+  if (active) {
+    const currentTarget = event.target;
+    let isIn = [];
+    for (Option of options) {
+      if (Option !== currentTarget && button !== currentTarget && !barsArray.some(bar => bar === currentTarget)) isIn.push(false);
+      else isIn.push(true);
+    }
+    if (!isIn.includes(true)) switchMenu("new close menu");
+  }
+});
 
 button.addEventListener("click", () => {
-  switchMenu();
+  switchMenu("boton");
 });
 switchMenu = () => {
   bars[0].classList.toggle("menuActive0", !active);
@@ -19,13 +37,7 @@ switchMenu = () => {
   active = !active;
 };
 
-// botones
-const options = document.querySelectorAll(".header__ul--button"); // lista de las 3 opciones
-const sections = [
-  document.getElementById("quienSoy"),
-  document.getElementById("contact"),
-];
-
+//scroll
 function scrollToSection(section) {
   section.scrollIntoView({ behavior: "smooth", block: "center" });
 }
@@ -38,15 +50,9 @@ options[1].addEventListener("click", () => {
   scrollToSection(sections[1]);
   switchMenu();
 });
-
-document.addEventListener("click", (event) => {
-  if (active) {
-    const currentTarget = event.target;
-    let isIn = [];
-    for (Option of options) {
-      if (Option !== currentTarget  && button !== currentTarget) isIn.push(false);
-      else isIn.push(true);
-    }
-    if (!isIn.includes(true)) switchMenu();
-  }
+options[2].addEventListener("click", () => {
+  scrollToSection(sections[2]);
+  switchMenu();
 });
+
+
