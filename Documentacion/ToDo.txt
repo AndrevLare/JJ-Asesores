@@ -1,6 +1,7 @@
 - correo corporativo
 - horario de atencion
 - completar texto quien soy
+- Noticias
 - Sevicios --------------------
 - Footer
 - media queris

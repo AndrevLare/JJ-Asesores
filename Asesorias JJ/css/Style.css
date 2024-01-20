@@ -316,6 +316,40 @@ body {
   background-color: #3d6460;
   border: #4e7e78 dashed 0.15rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f6f6;
+}
+
+.services__div1::before{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 15rem;
+  content: "Click en algún servicio para más información";
+  font-size: 0.9rem;
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+}
+.services__div1--span{
+  position: absolute;
+  width: 90vw;
+  height: 15rem;
+  border-radius: 1rem;
+  /* background-image: url("../img/Sample0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%); */
+}
+.services__div1--h2{
+  margin-top: 1rem;
+}
+.services__div1--p{
+  margin: 0 1rem 1rem 1rem
 }
 .services__div0{
   display: grid;
