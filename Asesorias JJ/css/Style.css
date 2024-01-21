@@ -209,13 +209,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.contact--h4{
+.contact--h4 {
   margin: 2rem 0 auto 0;
 }
 .contact__div {
   margin-bottom: auto;
 }
-.contact__div--hr{
+.contact__div--hr {
   width: 17rem;
 }
 .contact p,
@@ -297,7 +297,7 @@ body {
   background: linear-gradient(315deg, #283938, #345150);
   padding-bottom: 1rem;
 }
-.services__div{
+.services__div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +309,7 @@ body {
 .services--hr {
   width: 12.5rem;
 }
-.services__div1{
+.services__div1 {
   width: 90vw;
   height: 15rem;
   margin-top: 2rem;
@@ -322,36 +322,38 @@ body {
   color: #f5f6f6;
 }
 
-.services__div1::before{
+.services__div1::before {
   position: absolute;
   display: flex;
   flex-direction: column;
   width: 90vw;
   height: 15rem;
-  content: "Click en algún servicio para más información";
+  content: attr(data-text);
   font-size: 0.9rem;
   text-align: center;
   justify-content: center;
   z-index: 1;
 }
-.services__div1--span{
+.services__div1--span {
   position: absolute;
   width: 90vw;
   height: 15rem;
   border-radius: 1rem;
-  /* background-image: url("../img/Sample0.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(50%); */
+  filter: brightness(50%);
+  z-index: 10;
 }
-.services__div1--h2{
+.services__div1--h2 {
   margin-top: 1rem;
+  z-index: 11;
 }
-.services__div1--p{
-  margin: 0 1rem 1rem 1rem
+.services__div1--p {
+  margin: 0 1rem 1rem 1rem;
+  z-index: 11;
 }
-.services__div0{
+.services__div0 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   gap: 2rem;
@@ -372,14 +374,14 @@ body {
   border-radius: 1rem;
   transition: all 200ms ease-in-out;
 }
-.services__div0__div__button:active{
+.services__div0__div__button:active {
   transform: scale(1.1, 1.1);
 }
-.services__div0__div__button--h2{
+.services__div0__div__button--h2 {
   font-size: 1rem;
   margin: 0;
 }
-.services__div0__div__button--i{
+.services__div0__div__button--i {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #aeb2b2;
