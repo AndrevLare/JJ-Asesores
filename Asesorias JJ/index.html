@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>JJ Asesores</title>
 
@@ -237,10 +237,17 @@
     <!-- scripts -->
     <script src="js/menuButton.js"></script>
     <script src="js/contactButtons.js"></script>
-    <script src="js/servicesSelect.js"></script>
+    <script src="js/servicesSelect.js" async></script>
     <script
       src="https://kit.fontawesome.com/4271bf6616.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const about = document.querySelector(".about");
+      const span = document.querySelector(".about--span");
+      let clientHeight = about.clientHeight;
+      span.style.height = `${clientHeight}px`;
+      about.clientHeight;
+    </script>
   </body>
 </html>
