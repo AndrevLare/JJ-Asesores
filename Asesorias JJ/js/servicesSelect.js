@@ -79,7 +79,17 @@ click = (i) => {
   infoBoardItems[3].setAttribute("data-text", " ");
   infoBoardItems[0].innerText = servicesInfo[i].title;
   infoBoardItems[1].innerText = servicesInfo[i].text;
-  infoBoardItems[2].style.backgroundImage = `url('${imgsPreload[i]}')`;
+  infoBoardItems[2].style.backgroundImage = "none";
+
+  const loadImagePromise = new Promise((resolve) => {
+    const img = new Image();
+    img.src = imgsPreload[i];
+    img.onload = resolve;
+  });
+
+  loadImagePromise.then(() => {
+    infoBoardItems[2].style.backgroundImage = `url('${imgsPreload[i]}')`;
+  });
 };
 
 servicesList.forEach((service, index) =>
