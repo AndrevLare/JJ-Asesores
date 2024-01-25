@@ -33,13 +33,13 @@ body {
 .nav {
   z-index: 20;
   display: flex;
-  background: #1b1c1c;
+  background: #0a1518;
   color: #fff;
   align-items: center;
   justify-content: space-between;
   height: 4rem;
   font-size: 5vh;
-  border-bottom: #4f7d79 solid 0.5vh;
+  border-bottom: #2e9b9e solid 0.5vh;
 }
 .header__nav--logo {
   margin: 1rem;
@@ -57,7 +57,7 @@ body {
   margin: 0 1rem;
 }
 .header__nav__menuBars--bar {
-  background-color: #699893;
+  background-color: #48b7b9;
   display: inline-block;
   width: 2.5rem;
   height: 0.35rem;
@@ -112,7 +112,7 @@ body {
 .header__ul li button {
   border: none;
   outline: none;
-  background-color: #1b1c1c;
+  background-color: #050205;
   color: #fff;
   font-family: "Comfortaa", sans-serif;
   margin: 0 0;
@@ -130,11 +130,11 @@ body {
 
 /* Main */
 .main {
-  height: 55rem;
+  height: 60rem;
 }
 .main--span {
   position: absolute;
-  height: 55rem;
+  height: 60rem;
   width: 100%;
   background-image: url("../img/Sample0.jpg");
   z-index: -1;
@@ -202,7 +202,7 @@ body {
 
 /* Contacto*/
 .contact {
-  background: linear-gradient(315deg, #283938, #345150);
+  background: linear-gradient(315deg, #0b2528, #23797e);
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -227,19 +227,19 @@ body {
   width: 60vw;
   padding: 0.5rem;
   color: #aeb2b2;
-  background-color: #283938;
-  border: #1b1c1c solid 2px;
+  background-color: #23797e;
+  border: #1d4e52 solid 2px;
   border-radius: 0.4rem;
   transition: all 0.5s;
 }
 .contact div button {
-  background: #283938;
+  background: #23797e;
   color: #f5f6f6;
   border-radius: 0.4rem;
   width: 2.5rem;
   padding: 0.5rem;
   text-align: center;
-  border: #1b1c1c solid 2px;
+  border: #1d4e52 solid 2px;
   transition: background-color 100ms ease;
 }
 .contact div button:active {
@@ -292,7 +292,7 @@ body {
 
 /* Servicios */
 .services {
-  background: linear-gradient(315deg, #283938, #345150);
+  background: linear-gradient(315deg, #0b2528, #23797e);
   padding-bottom: 1rem;
 }
 .services__div {
@@ -309,7 +309,7 @@ body {
 }
 .services__div1 {
   width: 90vw;
-  height: 15rem;
+  height: 20rem;
   margin-top: 2rem;
   background-color: #3d6460;
   border: #4e7e78 dashed 0.15rem;
@@ -324,8 +324,8 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 90vw;
-  height: 15rem;
+  width: 50vw;
+  height: 20rem;
   content: attr(data-text);
   font-size: 0.9rem;
   text-align: center;
@@ -335,7 +335,7 @@ body {
 .services__div1--span {
   position: absolute;
   width: 90vw;
-  height: 15rem;
+  height: 20rem;
   border-radius: 1rem;
   background-size: cover;
   background-position: center;

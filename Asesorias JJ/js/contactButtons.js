@@ -27,7 +27,7 @@ const animationProperties = {
 };
 
 Buttons[0].addEventListener("click", () => {
-  let link = `mailto:servicio@asesoriasjj.com?`;
+  let link = `mailto:asesoriasjj2020@gmail.com?`;
   Buttons[0].animate(copyAnimation, animationProperties);
   window.open(link, "_black");
 });
@@ -37,7 +37,10 @@ const handleClipboardButtonClick = async (buttonIndex, textToCopy) => {
     await navigator.clipboard.writeText(textToCopy);
     Buttons[buttonIndex].children[0].classList.replace("fa-copy", "fa-check");
 
-    const animation = Buttons[buttonIndex].animate(copyAnimation, animationProperties);
+    const animation = Buttons[buttonIndex].animate(
+      copyAnimation,
+      animationProperties
+    );
     await animation.finished;
 
     Buttons[buttonIndex].children[0].classList.replace("fa-check", "fa-copy");
@@ -45,13 +48,19 @@ const handleClipboardButtonClick = async (buttonIndex, textToCopy) => {
     console.error("Error al copiar al portapapeles:", error);
     Buttons[buttonIndex].children[0].classList.replace("fa-copy", "fa-x");
 
-    const animation = Buttons[buttonIndex].animate(copyAnimation, animationProperties);
+    const animation = Buttons[buttonIndex].animate(
+      copyAnimation,
+      animationProperties
+    );
     await animation.finished;
 
     Buttons[buttonIndex].children[0].classList.replace("fa-x", "fa-copy");
   }
 };
 
-Buttons[1].addEventListener("click", () => handleClipboardButtonClick(1, "servicio@asesoriasjj.com"));
-Buttons[2].addEventListener("click", () => handleClipboardButtonClick(2, "3166905094"));
-
+Buttons[1].addEventListener("click", () =>
+  handleClipboardButtonClick(1, "servicio@asesoriasjj.com")
+);
+Buttons[2].addEventListener("click", () =>
+  handleClipboardButtonClick(2, "3166905094")
+);

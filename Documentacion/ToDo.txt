@@ -1,19 +1,14 @@
-- correo corporativo
-- horario de atencion
-- completar texto quien soy
+- Clientes
 - Noticias
-- Sevicios --------------------
+- Paralax en BG
 - Footer
 - media queris
 - Metadatos
 - Google keyword Planner, SEMrush
 - Google analytics
 - redireccion 301
-- icon
 
 
-NAV:
-servicios
 
 
 

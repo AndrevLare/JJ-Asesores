@@ -29,8 +29,8 @@
         </button>
       </nav>
       <ul class="header__ul">
-        <li><button class="header__ul--button">¿Quien Soy?</button></li>
         <li><button class="header__ul--button">Contacto</button></li>
+        <li><button class="header__ul--button">¿Quien Soy?</button></li>
         <li><button class="header__ul--button">Servicios</button></li>
       </ul>
     </header>
@@ -73,7 +73,7 @@
         <hr class="contact__div--hr" />
       </div>
       <div class="contact__email">
-        <p class="contact__email--p">servicio@asesoriasjj.com</p>
+        <p class="contact__email--p">asesoriasjj2020@gmail.com</p>
         <button class="contact__email--gmail" id="contactButtonMail">
           <i class="fa-solid fa-envelope"></i>
         </button>
@@ -87,7 +87,7 @@
           <i class="fa-solid fa-copy"></i>
         </button>
       </div>
-      <p class="contact--p">Horario: 8:30am - 7:00pm</p>
+      <p class="contact--p">Horario: Lunes-Sabado 8:00am - 8:00pm</p>
     </section>
 
     <!-- quien soy -->
@@ -103,7 +103,8 @@
           <b>impuestos y la contabilidad</b>. Mi misión es brindarte
           tranquilidad financiera al gestionar tus obligaciones tributarias,
           optimizar deducciones y preparar cuidadosamente declaraciones de
-          impuestos. Con experiencia en <b>[áreas específicas]</b>, estoy aquí
+          impuestos. Con amplia experiencia en todo lo relacionado con las areas
+          <b>Contable</b>, <b>Tributaria</b> y <b>Administrativa</b> estoy aquí
           para ser tu guía confiable en el laberinto tributario y ayudarte a
           alcanzar tus metas financieras. ¡Permíteme ser tu aliado en el camino
           hacia el éxito!
@@ -198,7 +199,7 @@
             <i
               class="services__div0__div__button--i fa-solid fa-compact-disc"
             ></i>
-            <h2 class="services__div0__div__button--h2">Medios Magneticos</h2>
+            <h2 class="services__div0__div__button--h2">Informacion Exógena</h2>
           </button>
         </div>
         <div class="services__div0__div">
@@ -231,6 +232,12 @@
             </h2>
           </button>
         </div>
+        <div class="services__div0__div">
+          <button class="services__div0__div__button">
+            <i class="services__div0__div__button--i fa-solid fa-list-ul"></i>
+            <h2 class="services__div0__div__button--h2">Otros Servicios</h2>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -243,11 +250,13 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const about = document.querySelector(".about");
-      const span = document.querySelector(".about--span");
-      let clientHeight = about.clientHeight;
-      span.style.height = `${clientHeight}px`;
-      about.clientHeight;
+      window.onload = () => {
+        const about = document.querySelector(".about");
+        const span = document.querySelector(".about--span");
+        let clientHeight = about.clientHeight;
+        span.style.height = `${clientHeight}px`;
+        about.clientHeight;
+      };
     </script>
   </body>
 </html>

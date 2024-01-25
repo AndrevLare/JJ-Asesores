@@ -5,19 +5,20 @@ const imgsPreload = [
   "img/img/AuditoriaTributaria.jpg",
   "img/img/Nomina.jpg",
   "img/img/DeclaracionesTributarias.jpg",
-  "img/img/Contabilidad Outsourcing.jpg",
+  "img/img/ContabilidadOutsourcing.jpg",
   "img/img/OutsourcingHome.jpg",
   "img/img/MediosMagneticos.jpg",
   "img/img/Supersociedades.jpg",
   "img/img/ImplementacionNIIF.jpg",
   "img/img/InformesDane.jpg",
   "img/img/DocumentosElectronicosDIAN.jpg",
+  "img/img/Otros.jpg",
 ];
 const servicesList = document.querySelectorAll(".services__div0__div__button");
 const servicesInfo = [
   {
     title: "Resivsoria Fiscal",
-    text: "La Revisoría Fiscal es esencial para garantizar la legalidad y transparencia de las operaciones empresariales, asegurando el cumplimiento de normativas.",
+    text: "La Revisoría Fiscal es esencial para garantizar la legalidad y transparencia de las operaciones empresariales, Para dar cumplimiento a lo dispuesto en el artículo 203 del codigo de comercio.Y lo que reza el artículo 28 de la ley 1258 de 2008 y el artículo 1 del decreto 2020 de 2009, y el parágrafo 2 del artículo 13 de la ley 43 de 1990 y cuando una ley especial así lo disponga.",
   },
   {
     title: "Auditoria de Control",
@@ -48,8 +49,8 @@ const servicesInfo = [
     text: "(placeholder) externalización de las funciones contables, pero en lugar de contratar servicios externos, la empresa podría tener un equipo especializado interno encargado de estas tareas",
   },
   {
-    title: "Medios Magneticos",
-    text: "La elaboración de Medios Magnéticos se enfoca en la preparación de documentos electrónicos, facilitando procesos administrativos y cumpliendo con requerimientos legales.",
+    title: "Informacion Exógena",
+    text: "Nacional(articulo 631 ET), MUnicipal(segun acuerdos locales)  La elaboración de Medios Magnéticos se enfoca en la preparación de documentos electrónicos, facilitando procesos administrativos y cumpliendo con requerimientos legales.",
   },
   {
     title: "Supersociedades",
@@ -66,6 +67,13 @@ const servicesInfo = [
   {
     title: "Implementacion Documentos Electronicos DIAN",
     text: "Implementacion de documentos electronicos solicitados por la dian, como: Factura Electronica, Nomina Electronica, Radián, Documento soporte",
+  },
+  {
+    title: "Otros Servicios",
+    text: `- Creacion de empresas
+    - otro
+    - otro
+    - otro`,
   },
 ];
 const infoBoardItems = [
