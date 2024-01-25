@@ -1,6 +1,6 @@
 - Clientes
 - Noticias
-- Paralax en BG
+- Paralax en BG                       <--
 - Footer
 - media queris
 - Metadatos

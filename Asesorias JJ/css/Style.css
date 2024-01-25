@@ -5,6 +5,8 @@ body {
   font-family: "Comfortaa", sans-serif;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
 }
 
 /* Reutilizable */
@@ -311,8 +313,8 @@ body {
   width: 90vw;
   height: 20rem;
   margin-top: 2rem;
-  background-color: #3d6460;
-  border: #4e7e78 dashed 0.15rem;
+  background-color: #2f999d;
+  border: #48b7b9 dashed 0.15rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
