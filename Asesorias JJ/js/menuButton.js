@@ -15,17 +15,17 @@ const sections = [
 document.addEventListener("click", (event) => {
   if (active) {
     const currentTarget = event.target;
-    let isIn = [];
+    let isIn;
     for (Option of options) {
       if (
         Option !== currentTarget &&
         button !== currentTarget &&
         !barsArray.some((bar) => bar === currentTarget)
       )
-        isIn.push(false);
-      else isIn.push(true);
+        isIn = false;
+      else isIn = true;
     }
-    if (!isIn.includes(true)) switchMenu("new close menu");
+    if (!isIn === true) switchMenu();
   }
 });
 
