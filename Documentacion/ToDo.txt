@@ -1,11 +1,9 @@
 - Clientes
-- Noticias
-- Paralax en BG                       <--
-- Footer
+- Noticias            
+- Footer                                <--
 - media queris
 - Metadatos
 - Google keyword Planner, SEMrush
-- Google analytics
 - redireccion 301
 
 
@@ -52,3 +50,8 @@ Responsive Design: Asegúrate de que tu sitio sea completamente responsive, ya q
 Etiquetas Semanticas: Asegúrate de usar etiquetas semánticas HTML5 de manera adecuada para mejorar la accesibilidad y la estructura del documento.
 
 Recuerda ajustar las rutas de los archivos según la estructura de carpetas de tu proyecto. Además, estos son solo comentarios generales y dependiendo de las necesidades específicas de tu proyecto, podrías necesitar ajustes adicionales.
+
+
+Actualizacion:
+
+- Paralax en BG
