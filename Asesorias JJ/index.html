@@ -37,7 +37,7 @@
     </header>
 
     <!-- main -->
-    <main class="main">
+    <main class="main" id="main">
       <img
         class="main--sample"
         src="img/Sample0.jpg"
@@ -68,9 +68,9 @@
     </main>
 
     <!-- contacto -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__div">
-        <h4 class="contact--h4" id="contact">Contactame</h4>
+        <h4 class="contact--h4">Contactame</h4>
         <hr class="contact__div--hr" />
       </div>
       <div class="contact__email">
@@ -114,9 +114,9 @@
     </section>
 
     <!-- servicios -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__div">
-        <h4 class="services--h4" id="services">Servicios</h4>
+        <h4 class="services--h4">Servicios</h4>
         <hr class="services--hr" />
         <div
           class="services__div1"
@@ -244,27 +244,36 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer__map">
-        <ul class="footer__map__ul">
-          <li class="footer__map__ul__li"></li>
-          <li class="footer__map__ul__li"></li>
-          <li class="footer__map__ul__li"></li>
-          <li class="footer__map__ul__li"></li>
-          <li class="footer__map__ul__li"></li>
-        </ul>
-      </div>
-      <div class="footer__contact">
-        <p class="footer__contact--p"></p>
-        <ul class="footer__contact__ul">
-          <li class="footer____ul__li"></li>
-          <li class="footer____ul__li"></li>
-        </ul>
+      <div class="footer__div">
+        <img src="img/Logo.svg" alt="Logo" title="footer logo" hidden="" />
+        <div class="footer__map">
+          <ul class="footer__map__ul">
+            <li class="footer__map__ul__li"><a href="#main">Inicio</a></li>
+            <li class="footer__map__ul__li"><a href="#contact">Contacto</a></li>
+            <li class="footer__map__ul__li">
+              <a href="#quienSoy">¿Quien soy?</a>
+            </li>
+            <li class="footer__map__ul__li">
+              <a href="#services">Servicios</a>
+            </li>
+            <li class="footer__map__ul__li"><a href="#news">Novedades</a></li>
+          </ul>
+        </div>
+        <hr class="footer__hr" />
+        <div class="footer__contact">
+          <p class="footer__contact--p">Informacion de contacto:</p>
+          <ul class="footer__contact__ul">
+            <li class="footer____ul__li">asesoriasjj2020@gmail.com:</li>
+            <li class="footer____ul__li">+57 3166905094</li>
+          </ul>
+        </div>
       </div>
       <p class="footer--p">
         JJ Asesores | Sitio web por AndrevLare &copy; 2024 todos los derechos
-        reservados. | El sitio no utiliza cookies.
+        reservados. | El sitio web no utiliza cookies.
       </p>
     </footer>
+
     <!-- scripts -->
     <script src="js/menuButton.js"></script>
     <script src="js/contactButtons.js"></script>

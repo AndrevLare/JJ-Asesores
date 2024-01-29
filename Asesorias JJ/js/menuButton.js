@@ -45,7 +45,7 @@ switchMenu = () => {
 
 //scroll
 function scrollToSection(section) {
-  section.scrollIntoView({ behavior: "smooth", block: "center" });
+  section.scrollIntoView({ block: "start" });
 }
 
 options[0].addEventListener("click", () => {
