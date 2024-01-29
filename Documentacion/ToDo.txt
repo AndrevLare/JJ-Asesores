@@ -1,7 +1,7 @@
 - Clientes
-- Noticias            
-- Footer                                <--
+- Noticias                          <-- 
 - media queris
+- completar datos de servicios
 - Metadatos
 - Google keyword Planner, SEMrush
 - redireccion 301

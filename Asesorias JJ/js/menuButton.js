@@ -4,12 +4,13 @@ const bars = document.querySelectorAll(".header__nav__menuBars--bar"); // lista 
 const barsArray = [...bars]; // conversion de la lista bars a array
 const menu = document.querySelector(".header__ul"); //objeto de la lista del menu
 let active = false; //Bool menu activado
-const options = document.querySelectorAll(".header__ul--button"); // array de las 3 opciones
+const options = document.querySelectorAll(".header__ul--button"); // array de las 4 opciones
 const sections = [
   // array de las 3 secciones (id)
   document.getElementById("contact"),
   document.getElementById("quienSoy"),
   document.getElementById("services"),
+  document.getElementById("news"),
 ];
 
 document.addEventListener("click", (event) => {
@@ -48,15 +49,23 @@ function scrollToSection(section) {
   section.scrollIntoView({ block: "start" });
 }
 
-options[0].addEventListener("click", () => {
-  scrollToSection(sections[0]);
-  switchMenu();
+options.forEach((_option, i) => {
+  _option.addEventListener("click", () => {
+    scrollToSection(sections[i]);
+    switchMenu();
+  });
 });
-options[1].addEventListener("click", () => {
-  scrollToSection(sections[1]);
-  switchMenu();
-});
-options[2].addEventListener("click", () => {
-  scrollToSection(sections[2]);
-  switchMenu();
-});
+
+// options[0].addEventListener("click", () => {});
+// options[1].addEventListener("click", () => {
+//   scrollToSection(sections[1]);
+//   switchMenu();
+// });
+// options[2].addEventListener("click", () => {
+//   scrollToSection(sections[2]);
+//   switchMenu();
+// });
+// options[3].addEventListener("click", () => {
+//   scrollToSection(sections[3]);
+//   switchMenu();
+// });
