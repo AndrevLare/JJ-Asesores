@@ -20,7 +20,7 @@
       <nav class="nav">
         <a href="index.html"
           ><img
-            class="header__nav--logo"
+            class="header__nav--logo SR-nav--logo"
             src="img/Logo.svg"
             alt="Logo"
             title="Logo"
@@ -36,7 +36,7 @@
           </li>
           <li><a class="header__ul--a-desktop" href="#news">Novedades</a></li>
         </ul>
-        <button class="header__nav__menuBars">
+        <button class="header__nav__menuBars SR-nav--button">
           <span class="header__nav__menuBars--bar menuBars--bar1"></span>
           <span class="header__nav__menuBars--bar menuBars--bar2"></span>
           <span class="header__nav__menuBars--bar menuBars--bar3"></span>
@@ -54,16 +54,18 @@
     <main class="main" id="main">
       <img
         class="main--sample"
-        src="img/BG/Sample0.jpg"
+        src="img/BG/BG-Without-blur/Sample1WOB.jpg"
         alt="Contador"
         title="Imagen fondo"
         hidden=" "
       />
       <span class="main--span"></span>
-      <div class="main__div">
-        <h1 class="main__div--h1">JJ Asesores</h1>
-        <h4 class="main__div--h4">La tranquilidad para su empresa</h4>
-        <hr class="main__div--hr" />
+      <div class="main__div SR-main__div">
+        <div class="main__div__div">
+          <h1 class="main__div--h1">JJ Asesores</h1>
+          <h4 class="main__div--h4">La tranquilidad para su empresa</h4>
+          <hr class="main__div--hr" />
+        </div>
         <p class="main__div--p">
           <span>Bienvenido a JJ Asesores.</span> <br /><br />
           Donde la experiencia se combina con un compromiso inquebrantable hacia
@@ -73,7 +75,7 @@
           de su empresa. ¡Hagamos juntos que sus finanzas destaquen!
         </p>
       </div>
-      <div class="main__div1">
+      <div class="main__div1 SR-main__div">
         <i class="main__div1--i fa-solid fa-clock"></i>
         <span class="main__div1--span"
           ><span>+30 Años</span><br />de experiencia</span
@@ -83,11 +85,11 @@
 
     <!-- contacto -->
     <section class="contact" id="contact">
-      <div class="contact__div">
+      <div class="contact__div SR-section">
         <h4 class="contact--h4">Contactame</h4>
         <hr class="contact__div--hr" />
       </div>
-      <div class="contact__email">
+      <div class="contact__email SR-section">
         <p class="contact__email--p">asesoriasjj2020@gmail.com</p>
         <button class="contact__email--gmail" id="contactButtonMail">
           <i class="fa-solid fa-envelope"></i>
@@ -96,21 +98,21 @@
           <i class="fa-solid fa-copy" hidden=" "></i>
         </button>
       </div>
-      <div class="contact__phone">
+      <div class="contact__phone SR-section">
         <p class="contact__phone--p">+57 316 690 5094</p>
         <button class="contact__phone--copy" id="contactButtonCopyWsp">
           <i class="fa-solid fa-copy"></i>
         </button>
       </div>
-      <p class="contact--p">Horario: Lunes-Sabado 8:00am - 8:00pm</p>
+      <p class="contact--p SR-section">Horario: Lunes-Sabado 8:00am - 8:00pm</p>
     </section>
 
     <!-- quien soy -->
     <section class="about sectionBG" id="quienSoy">
       <span class="about--span spanBG"></span>
-      <h4 class="about--h4">¿Quien Soy?</h4>
-      <hr class="about--hr" />
-      <div class="about__div">
+      <h4 class="about--h4 SR-section">¿Quien Soy?</h4>
+      <hr class="about--hr SR-section" />
+      <div class="about__div SR-section">
         <p class="about__div--p">
           ¡Hola! Soy Jorge Gonzalez, un apasionado
           <b>contador público tributario</b> con más de 30 años de experiencia.
@@ -129,7 +131,7 @@
 
     <!-- servicios -->
     <section class="services" id="services">
-      <div class="services__div">
+      <div class="services__div SR-section">
         <h4 class="services--h4">Servicios</h4>
         <hr class="services--hr" />
         <div
@@ -141,7 +143,7 @@
           <p class="services__div1--p"></p>
         </div>
       </div>
-      <div class="services__div0">
+      <div class="services__div0 SR-section">
         <!-- grid -->
         <div class="services__div0__div">
           <button class="services__div0__div__button">
@@ -297,14 +299,20 @@
       </p>
     </footer>
 
-    <!-- scripts -->
-    <script src="js/menuButton.js" async></script>
-    <script src="js/contactButtons.js" async></script>
-    <script src="js/servicesSelect.js" async></script>
+    <!-- Librarys -->
     <script
       src="https://kit.fontawesome.com/4271bf6616.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/scrollreveal.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/menuButton.js" async></script>
+    <script src="js/contactButtons.js" async></script>
+    <script src="js/servicesSelect.js" async></script>
+    <script src="js/scrollRevealManager.js"></script>
+
+    <!-- Inline -->
     <script>
       window.onload = () => {
         const section = document.querySelectorAll(".sectionBG");
