@@ -1,6 +1,7 @@
-- Noticias                          <-- 
-- media queris
+- media queris                                <--
 - completar datos de servicios
+- poner novedades
+- llenar tabla
 - Metadatos
 - Google keyword Planner, SEMrush
 - redireccion 301
