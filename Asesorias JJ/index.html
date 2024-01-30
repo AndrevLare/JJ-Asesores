@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/Animations.css" />
     <link rel="stylesheet" href="css/Style.css" />
   </head>
+
   <body>
     <!-- header -->
     <header class="header">
@@ -41,7 +42,7 @@
     <main class="main" id="main">
       <img
         class="main--sample"
-        src="img/Sample0.jpg"
+        src="img/BG/Sample0.jpg"
         alt="Contador"
         title="Imagen fondo"
         hidden=" "
@@ -93,8 +94,8 @@
     </section>
 
     <!-- quien soy -->
-    <section class="about" id="quienSoy">
-      <span class="about--span"></span>
+    <section class="about sectionBG" id="quienSoy">
+      <span class="about--span spanBG"></span>
       <h4 class="about--h4">¿Quien Soy?</h4>
       <hr class="about--hr" />
       <div class="about__div">
@@ -244,7 +245,13 @@
     </section>
 
     <!-- novedades -->
-    <section class="news" id="news"></section>
+    <section class="news" id="news">
+      <h4 class="news--h4">Novedades</h4>
+      <hr class="news--hr" />
+      <a href="news.html" class="news--a"
+        >Para saber las ultimas novedades de click >></a
+      >
+    </section>
 
     <!-- footer -->
     <footer class="footer">
@@ -288,11 +295,12 @@
     ></script>
     <script>
       window.onload = () => {
-        const about = document.querySelector(".about");
-        const span = document.querySelector(".about--span");
-        let clientHeight = about.clientHeight;
-        span.style.height = `${clientHeight}px`;
-        about.clientHeight;
+        const section = document.querySelectorAll(".sectionBG");
+        const span = document.querySelectorAll(".spanBG");
+        span.forEach((o, i) => {
+          let clientHeight = section[i].clientHeight;
+          o.style.height = `${clientHeight}px`;
+        });
       };
     </script>
   </body>

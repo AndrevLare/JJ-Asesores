@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap");
+/* General */
+body {
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ebfffd;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav {
+  z-index: 20;
+  display: flex;
+  background: #0a1518;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  font-size: 5vh;
+  border-bottom: #2e9b9e solid 0.5vh;
+}
+header a {
+  display: flex;
+  align-items: center;
+}
+.header__nav--logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0.4rem 0 0 0.5rem;
+}
+
+/* boton menu */
+.header__nav__menuBars {
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 1rem;
+}
+.header__nav__menuBars--bar {
+  background-color: #48b7b9;
+  display: inline-block;
+  width: 2.5rem;
+  height: 0.35rem;
+  border-radius: 10px;
+}
+.menuActive0 {
+  transform-origin: right;
+  animation: openMenu0 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuActive1 {
+  animation: openMenu1 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuActive2 {
+  transform-origin: right;
+  animation: openMenu2 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuInactive0 {
+  transform-origin: right;
+  animation: closeMenu0 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuInactive1 {
+  animation: closeMenu1 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menuInactive2 {
+  transform-origin: right;
+  animation: closeMenu2 200ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Menu */
+.header__ul {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  transform-origin: top;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transform: scale(1, 0);
+  transition: transform 200ms ease-out;
+}
+.header__ul :last-child button {
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
+}
+.header__ul li button {
+  border: none;
+  outline: none;
+  background-color: #050205;
+  color: #fff;
+  font-family: "Comfortaa", sans-serif;
+  margin: 0 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3.5vh 0;
+  border-bottom: #81faff solid 3px;
+  transition: background-color 100ms ease;
+}
+.header__ul li button:active {
+  background-color: #006a72;
+}
+
+.footer {
+  padding: 1rem 1rem 0.5rem 1rem;
+  background-color: #0a1518;
+  color: #aeb2b2;
+  border-top: #2e9b9e solid 0.5vh;
+}
+.footer--p {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #868a89;
+  padding-top: 0.5rem;
+}
+.footer__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.footer li {
+  list-style: none;
+}
+.footer ul {
+  padding: 0;
+}
+.footer a {
+  color: #aeb2b2;
+  text-decoration: underline dotted #aeb2b2;
+}
+.footer__hr {
+  margin: 0;
+  height: 6.5rem;
+  color: #868a89;
+  border-style: solid;
+  border-radius: 1rem;
+}
+.footer__map__ul {
+  text-align: right;
+}
+.footer__contact__ul {
+  text-align: left;
+  margin: 0 0 0 0.5rem;
+}
+.footer__contact--p {
+  margin-block: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1.5rem 0 0 0;
+}
+hr {
+  width: 15rem;
+  margin-top: 0;
+  border: #0b1215 solid 0.13rem;
+  border-radius: 1rem;
+}
+
+.main--h2 {
+  margin: 3rem 1rem 1rem 1rem;
+  text-align: center;
+}
+div:has(.main__table) {
+  display: flex;
+  justify-content: center;
+}
+.main__table {
+  width: 90%;
+  background-color: #2e9b9e;
+  border-collapse: collapse;
+}
+.main__table td,
+.main__table tr {
+  border: #81faff solid 0.1rem;
+  padding: 0.7rem;
+  text-align: center;
+  color: #fff;
+}
+.first {
+  font-weight: bold;
+}
+
+.main__news-div {
+  margin: 3rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+.new {
+  width: 90%;
+  border: #098295 solid 0.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.new--img {
+  width: 100%;
+  border-bottom: #0b1215 solid 0.2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.new--h2 {
+  margin: 0.7rem 0.5rem 0.5rem 0.5rem;
+}
+.new--p {
+  margin: 0.5rem;
+}

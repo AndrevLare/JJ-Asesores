@@ -14,13 +14,12 @@ html {
 .main__div--hr,
 .about--hr,
 .services--hr,
-.contact__div--hr {
+.contact__div--hr,
+.news--hr {
   border: #f5f6f6 solid 0.13rem;
   border-radius: 1rem;
 }
-.contact--h4,
-.about--h4,
-.services--h4 {
+section h4 {
   font-size: 3rem;
   text-align: center;
   color: #f5f6f6;
@@ -145,7 +144,7 @@ header a {
   position: absolute;
   height: 60rem;
   width: 100%;
-  background-image: url("../img/Sample0.jpg");
+  background-image: url("../img/BG/Sample0.jpg");
   z-index: -1;
   background-size: cover;
   background-position: center;
@@ -274,7 +273,7 @@ header a {
 .about--span {
   position: absolute;
   width: 100%;
-  background-image: url("../img/Sample1.jpg");
+  background-image: url("../img/BG/Sample1.jpg");
   z-index: -1;
   background-size: cover;
   background-position: center;
@@ -397,6 +396,28 @@ header a {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #aeb2b2;
+}
+
+/* News */
+.news {
+  scroll-margin-top: 4rem;
+  border-top: #1d4e52 solid 5px;
+  background: #051518;
+  padding: 1rem 0 0.1px 0;
+}
+.news--h4 {
+  margin: 0;
+}
+.news--hr {
+  width: 15rem;
+}
+.news--a {
+  color: #f5f6f6;
+  display: block;
+  text-align: center;
+  text-decoration: underline dotted;
+  margin: 1rem;
+  font-size: 0.9rem;
 }
 
 /* footer */

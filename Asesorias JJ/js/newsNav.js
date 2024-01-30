@@ -1,17 +1,10 @@
-// Variables
+//Variables
 const button = document.querySelector(".header__nav__menuBars"); //Contenedor barras y boton
 const bars = document.querySelectorAll(".header__nav__menuBars--bar"); // lista con las 3 barras
 const barsArray = [...bars]; // conversion de la lista bars a array
 const menu = document.querySelector(".header__ul"); //objeto de la lista del menu
 let active = false; //Bool menu activado
-const options = document.querySelectorAll(".header__ul--button"); // array de las 4 opciones
-const sections = [
-  // array de las 3 secciones (id)
-  document.getElementById("contact"),
-  document.getElementById("quienSoy"),
-  document.getElementById("services"),
-  document.getElementById("news"),
-];
+const options = document.querySelectorAll(".header__ul--button");
 
 document.addEventListener("click", (event) => {
   if (active) {
@@ -43,15 +36,3 @@ switchMenu = () => {
   menu.style.transform = active ? "scale(1, 0)" : "scale(1, 1)";
   active = !active;
 };
-
-//scroll
-function scrollToSection(section) {
-  section.scrollIntoView({ block: "start" });
-}
-
-options.forEach((_option, i) => {
-  _option.addEventListener("click", () => {
-    scrollToSection(sections[i]);
-    switchMenu();
-  });
-});
