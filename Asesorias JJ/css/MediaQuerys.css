@@ -1,0 +1,27 @@
+@media only screen and (width > 1200px) and (height > 750px) and (orientation: landscape) {
+  .header__nav__menuBars,
+  .header__ul {
+    display: none;
+  }
+  .header__ul-desktop {
+    display: inline;
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+    padding: 0;
+  }
+  .nav img {
+    transition: scale 250ms ease-in-out;
+  }
+  .header__ul-desktop a {
+    color: #f5f6f6;
+    text-decoration: none;
+    transition: scale 250ms ease-in-out;
+  }
+  .header__ul-desktop a:hover,
+  .nav img:hover {
+    scale: 1.1;
+  }
+}
