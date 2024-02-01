@@ -1,7 +1,7 @@
 @media only screen and (width > 1200px) and (height > 750px) and (orientation: landscape) {
   /* general */
   body {
-    background-color: #dedee7;
+    background: linear-gradient(-90deg, #23797e, #2f999d);
   }
 
   /* header */
@@ -36,6 +36,8 @@
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: repeat(2, 50%);
+    border-bottom: #1e4d51 solid 0.5rem;
+    /* background: linear-gradient(90deg, #1d4044, #2f999d); */
   }
   .main--span {
     display: none;
@@ -61,12 +63,65 @@
   .main__div--h1,
   .main__div1--i,
   .main__div1--span {
-    color: #0b0b0b;
+    color: #f5f6f6;
   }
   .main__div--hr {
-    border-color: #0b0b0b;
+    border-color: #f5f6f6f5;
   }
   .main__div1--i {
     margin-top: 5rem;
+  }
+
+  .sections-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(3, auto);
+  }
+  /* contacto */
+  .contact {
+    background: none;
+    position: sticky;
+    top: 5rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    background-color: #1e4d51;
+    margin: 7rem 1rem;
+    border-radius: 1rem;
+    border: #0b2528 dashed 0.3rem;
+  }
+  .contact div p {
+    border: #23797e solir 0.2rem;
+    width: 30em;
+  }
+  /* about */
+  .about p {
+    text-align: center;
+  }
+  .about--span {
+    display: none;
+  }
+  /* services */
+  .services {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__div1 {
+    width: 40em;
+  }
+  .services__div1 span {
+    width: 40em;
+  }
+  .services__div0 {
+    max-width: 80%;
+  }
+  .services__div0__div__button:hover {
+    transform: scale(1.1, 1.1);
+  }
+  /* footer */
+  .footer img {
+    display: inline;
+    width: 10rem;
   }
 }

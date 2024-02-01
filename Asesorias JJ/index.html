@@ -43,6 +43,7 @@
         </button>
       </nav>
       <ul class="header__ul">
+        <li><button class="header__ul--button">Inicio</button></li>
         <li><button class="header__ul--button">Contacto</button></li>
         <li><button class="header__ul--button">¿Quien Soy?</button></li>
         <li><button class="header__ul--button">Servicios</button></li>
@@ -83,181 +84,192 @@
       </div>
     </main>
 
-    <!-- contacto -->
-    <section class="contact" id="contact">
-      <div class="contact__div SR-section">
-        <h4 class="contact--h4">Contactame</h4>
-        <hr class="contact__div--hr" />
-      </div>
-      <div class="contact__email SR-section">
-        <p class="contact__email--p">asesoriasjj2020@gmail.com</p>
-        <button class="contact__email--gmail" id="contactButtonMail">
-          <i class="fa-solid fa-envelope"></i>
-        </button>
-        <button class="contact__email--copy" id="contactButtonCopyMail">
-          <i class="fa-solid fa-copy" hidden=" "></i>
-        </button>
-      </div>
-      <div class="contact__phone SR-section">
-        <p class="contact__phone--p">+57 316 690 5094</p>
-        <button class="contact__phone--copy" id="contactButtonCopyWsp">
-          <i class="fa-solid fa-copy"></i>
-        </button>
-      </div>
-      <p class="contact--p SR-section">Horario: Lunes-Sabado 8:00am - 8:00pm</p>
-    </section>
-
-    <!-- quien soy -->
-    <section class="about sectionBG" id="quienSoy">
-      <span class="about--span spanBG"></span>
-      <h4 class="about--h4 SR-section">¿Quien Soy?</h4>
-      <hr class="about--hr SR-section" />
-      <div class="about__div SR-section">
-        <p class="about__div--p">
-          ¡Hola! Soy Jorge Gonzalez, un apasionado
-          <b>contador público tributario</b> con más de 30 años de experiencia.
-          Mi enfoque se centra en simplificar el complejo mundo de los
-          <b>impuestos y la contabilidad</b>. Mi misión es brindarte
-          tranquilidad financiera al gestionar tus obligaciones tributarias,
-          optimizar deducciones y preparar cuidadosamente declaraciones de
-          impuestos. Con amplia experiencia en todo lo relacionado con las areas
-          <b>Contable</b>, <b>Tributaria</b> y <b>Administrativa</b> estoy aquí
-          para ser tu guía confiable en el laberinto tributario y ayudarte a
-          alcanzar tus metas financieras. ¡Permíteme ser tu aliado en el camino
-          hacia el éxito!
+    <div class="sections-container">
+      <!-- contacto -->
+      <section class="contact" id="contact">
+        <div class="contact__div SR-section">
+          <h4 class="contact--h4">Contactame</h4>
+          <hr class="contact__div--hr" />
+        </div>
+        <div class="contact__email SR-section">
+          <p class="contact__email--p">asesoriasjj2020@gmail.com</p>
+          <button class="contact__email--gmail" id="contactButtonMail">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+          <button class="contact__email--copy" id="contactButtonCopyMail">
+            <i class="fa-solid fa-copy" hidden=" "></i>
+          </button>
+        </div>
+        <div class="contact__phone SR-section">
+          <p class="contact__phone--p">+57 316 690 5094</p>
+          <button class="contact__phone--copy" id="contactButtonCopyWsp">
+            <i class="fa-solid fa-copy"></i>
+          </button>
+        </div>
+        <p class="contact--p SR-section">
+          Horario: Lunes-Sabado 8:00am - 8:00pm
         </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- servicios -->
-    <section class="services" id="services">
-      <div class="services__div SR-section">
-        <h4 class="services--h4">Servicios</h4>
-        <hr class="services--hr" />
-        <div
-          class="services__div1"
-          data-text="Click en algun servicio para mas informacion"
-        >
-          <span class="services__div1--span"></span>
-          <h2 class="services__div1--h2"></h2>
-          <p class="services__div1--p"></p>
+      <!-- quien soy -->
+      <section class="about sectionBG" id="quienSoy">
+        <span class="about--span spanBG"></span>
+        <h4 class="about--h4 SR-section">¿Quien Soy?</h4>
+        <hr class="about--hr SR-section" />
+        <div class="about__div SR-section">
+          <p class="about__div--p">
+            ¡Hola! Soy Jorge Gonzalez, un apasionado
+            <b>contador público tributario</b> con más de 30 años de
+            experiencia. Mi enfoque se centra en simplificar el complejo mundo
+            de los <b>impuestos y la contabilidad</b>. Mi misión es brindarte
+            tranquilidad financiera al gestionar tus obligaciones tributarias,
+            optimizar deducciones y preparar cuidadosamente declaraciones de
+            impuestos. Con amplia experiencia en todo lo relacionado con las
+            areas <b>Contable</b>, <b>Tributaria</b> y
+            <b>Administrativa</b> estoy aquí para ser tu guía confiable en el
+            laberinto tributario y ayudarte a alcanzar tus metas financieras.
+            ¡Permíteme ser tu aliado en el camino hacia el éxito!
+          </p>
         </div>
-      </div>
-      <div class="services__div0 SR-section">
-        <!-- grid -->
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-magnifying-glass"
-            ></i>
-            <h2 class="services__div0__div__button--h2">Revisoria Fiscal</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-gears"></i>
-            <h2 class="services__div0__div__button--h2">
-              Auditoria de Control
-            </h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-globe"></i>
-            <h2 class="services__div0__div__button--h2">Auditoria Externa</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-folder-open"
-            ></i>
-            <h2 class="services__div0__div__button--h2">
-              Auditoria Tributaria
-            </h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-briefcase"></i>
-            <h2 class="services__div0__div__button--h2">Nomina</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-file"></i>
-            <h2 class="services__div0__div__button--h2">
-              Declaraciones Tributarias
-            </h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-person-chalkboard"
-            ></i>
-            <h2 class="services__div0__div__button--h2">
-              Contabilidad Outsourcing
-            </h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-house-user"
-            ></i>
-            <h2 class="services__div0__div__button--h2">
-              Contabilidad Outsourcing in Home
-            </h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-compact-disc"
-            ></i>
-            <h2 class="services__div0__div__button--h2">Informacion Exógena</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-building"></i>
-            <h2 class="services__div0__div__button--h2">Supersociedades</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-magnifying-glass-chart"
-            ></i>
-            <h2 class="services__div0__div__button--h2">Implementacion NIIF</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i
-              class="services__div0__div__button--i fa-solid fa-chart-line"
-            ></i>
-            <h2 class="services__div0__div__button--h2">Informes DANE</h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-desktop"></i>
-            <h2 class="services__div0__div__button--h2">
-              Documentos Electronicos DIAN
-            </h2>
-          </button>
-        </div>
-        <div class="services__div0__div">
-          <button class="services__div0__div__button">
-            <i class="services__div0__div__button--i fa-solid fa-list-ul"></i>
-            <h2 class="services__div0__div__button--h2">Otros Servicios</h2>
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- servicios -->
+      <section class="services" id="services">
+        <div class="services__div SR-section">
+          <h4 class="services--h4">Servicios</h4>
+          <hr class="services--hr" />
+          <div
+            class="services__div1"
+            data-text="Click en algun servicio para mas informacion"
+          >
+            <span class="services__div1--span"></span>
+            <h2 class="services__div1--h2"></h2>
+            <p class="services__div1--p"></p>
+          </div>
+        </div>
+        <div class="services__div0 SR-section">
+          <!-- grid -->
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-magnifying-glass"
+              ></i>
+              <h2 class="services__div0__div__button--h2">Revisoria Fiscal</h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i class="services__div0__div__button--i fa-solid fa-gears"></i>
+              <h2 class="services__div0__div__button--h2">
+                Auditoria de Control
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i class="services__div0__div__button--i fa-solid fa-globe"></i>
+              <h2 class="services__div0__div__button--h2">Auditoria Externa</h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-folder-open"
+              ></i>
+              <h2 class="services__div0__div__button--h2">
+                Auditoria Tributaria
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-briefcase"
+              ></i>
+              <h2 class="services__div0__div__button--h2">Nomina</h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i class="services__div0__div__button--i fa-solid fa-file"></i>
+              <h2 class="services__div0__div__button--h2">
+                Declaraciones Tributarias
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-person-chalkboard"
+              ></i>
+              <h2 class="services__div0__div__button--h2">
+                Contabilidad Outsourcing
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-house-user"
+              ></i>
+              <h2 class="services__div0__div__button--h2">
+                Contabilidad Outsourcing in Home
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-compact-disc"
+              ></i>
+              <h2 class="services__div0__div__button--h2">
+                Informacion Exógena
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-building"
+              ></i>
+              <h2 class="services__div0__div__button--h2">Supersociedades</h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-magnifying-glass-chart"
+              ></i>
+              <h2 class="services__div0__div__button--h2">
+                Implementacion NIIF
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i
+                class="services__div0__div__button--i fa-solid fa-chart-line"
+              ></i>
+              <h2 class="services__div0__div__button--h2">Informes DANE</h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i class="services__div0__div__button--i fa-solid fa-desktop"></i>
+              <h2 class="services__div0__div__button--h2">
+                Documentos Electronicos DIAN
+              </h2>
+            </button>
+          </div>
+          <div class="services__div0__div">
+            <button class="services__div0__div__button">
+              <i class="services__div0__div__button--i fa-solid fa-list-ul"></i>
+              <h2 class="services__div0__div__button--h2">Otros Servicios</h2>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- novedades -->
     <section class="news" id="news">
       <h4 class="news--h4">Novedades</h4>
@@ -281,7 +293,6 @@
             <li class="footer__map__ul__li">
               <a href="#services">Servicios</a>
             </li>
-            <li class="footer__map__ul__li"><a href="#news">Novedades</a></li>
           </ul>
         </div>
         <hr class="footer__hr" />

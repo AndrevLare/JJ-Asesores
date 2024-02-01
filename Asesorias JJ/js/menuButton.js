@@ -4,9 +4,10 @@ const bars = document.querySelectorAll(".header__nav__menuBars--bar"); // lista 
 const barsArray = [...bars]; // conversion de la lista bars a array
 const menu = document.querySelector(".header__ul"); //objeto de la lista del menu
 let active = false; //Bool menu activado
-const options = document.querySelectorAll(".header__ul--button"); // array de las 4 opciones
+const options = document.querySelectorAll(".header__ul--button"); // array de las 5 opciones
 const sections = [
   // array de las 3 secciones (id)
+  document.getElementById("main"),
   document.getElementById("contact"),
   document.getElementById("quienSoy"),
   document.getElementById("services"),

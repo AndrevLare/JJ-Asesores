@@ -6,6 +6,9 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: #ebfffd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 html {
   scroll-behavior: smooth;
@@ -124,6 +127,7 @@ header a {
   background-color: #0a1518;
   color: #aeb2b2;
   border-top: #2e9b9e solid 0.5vh;
+  margin-top: auto;
 }
 .footer--p {
   text-align: center;
@@ -227,4 +231,32 @@ div:has(.main__table) {
 }
 .new--p {
   margin: 0.5rem;
+}
+@media only screen and (width > 1200px) and (height > 750px) and (orientation: landscape) {
+  /* header */
+  .header__nav__menuBars,
+  .header__ul {
+    display: none;
+  }
+  .header__ul-desktop {
+    display: inline;
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.2rem;
+    margin-right: 4rem;
+    padding: 0;
+  }
+  .nav img {
+    transition: scale 250ms ease-in-out;
+  }
+  .header__ul-desktop a {
+    color: #f5f6f6;
+    text-decoration: none;
+    transition: scale 250ms ease-in-out;
+  }
+  .header__ul-desktop a:hover,
+  .nav img:hover {
+    scale: 1.1;
+  }
 }

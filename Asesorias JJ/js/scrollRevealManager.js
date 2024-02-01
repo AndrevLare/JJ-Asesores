@@ -1,47 +1,81 @@
-const mediumBp = matchMedia(
+const desktopBp = matchMedia(
   "only screen and (width > 1200px) and (height > 750px) and (orientation: landscape)"
 );
 window.sr = ScrollReveal();
-let animationsDurations = [2000, 3000];
+let animationsDurations = [1000, 2000];
+let objectsMobile = [
+  {
+    nameClass: ".SR-nav--logo",
+    duration: 2000,
+    origin: "right",
+    distance: "-2rem",
+  },
+  {
+    nameClass: ".SR-main__div",
+    duration: 2000,
+    origin: "top",
+    distance: "-2rem",
+  },
+  {
+    nameClass: ".SR-nav--button",
+    duration: 2000,
+    origin: "left",
+    distance: "-2rem",
+  },
+  {
+    nameClass: ".SR-section",
+    duration: 2000,
+    origin: "right",
+    distance: "-2rem",
+  },
+];
+let objects = [
+  {
+    nameClass: ".header",
+    duration: 3000,
+    origin: " ",
+    distance: " ",
+  },
+  {
+    nameClass: ".main--sample",
+    duration: 2000,
+    origin: "left",
+    distance: "2rem",
+  },
+  {
+    nameClass: ".SR-main__div",
+    duration: 2000,
+    origin: "left",
+    distance: "-3rem",
+  },
+  {
+    nameClass: ".SR-section",
+    duration: 2000,
+    origin: "bottom",
+    distance: "2rem",
+  },
+];
 
 // Media querys
 const changeSize = (mql) => {
   if (mql.matches) {
-    sr.reveal(".main--sample", {
-      duration: animationsDurations[0],
-      origin: "left",
-      distance: "100px",
-    });
-    sr.reveal(".SR-main__div", {
-      duration: animationsDurations[0],
-      origin: "left",
-      distance: "-200px",
-    });
-    sr.reveal(".header", {
-      duration: animationsDurations[1],
-    });
+    for (object of objects) {
+      sr.reveal(object.nameClass, {
+        duration: object.duration,
+        origin: object.origin,
+        distance: object.distance,
+      });
+    }
   } else {
-    sr.reveal(".SR-nav--logo", {
-      duration: animationsDurations[0],
-      origin: "right",
-      distance: "-100px",
-    });
-    sr.reveal(".SR-main__div", {
-      duration: animationsDurations[0],
-      origin: "top",
-      distance: "-100px",
-    });
-    sr.reveal(".SR-nav--button", {
-      duration: animationsDurations[0],
-      origin: "left",
-      distance: "-100px",
-    });
-    sr.reveal(".SR-section", {
-      duration: animationsDurations[0],
-      origin: "right",
-      distance: "-100px",
-    });
+    for (object of objectsMobile) {
+      sr.reveal(object.nameClass, {
+        duration: object.duration,
+        origin: object.origin,
+        distance: object.distance,
+      });
+    }
   }
 };
-mediumBp.addEventListener("change", changeSize);
-changeSize(mediumBp);
+
+desktopBp.addEventListener("change", changeSize);
+changeSize(desktopBp);
