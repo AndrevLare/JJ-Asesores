@@ -8,19 +8,19 @@ let objectsMobile = [
     nameClass: ".SR-nav--logo",
     duration: 2000,
     origin: "right",
-    distance: "-2rem",
+    distance: "-1rem",
   },
   {
     nameClass: ".SR-main__div",
     duration: 2000,
     origin: "top",
-    distance: "-2rem",
+    distance: "-1rem",
   },
   {
     nameClass: ".SR-nav--button",
     duration: 2000,
     origin: "left",
-    distance: "-2rem",
+    distance: "-1rem",
   },
   {
     nameClass: ".SR-section",
