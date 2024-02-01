@@ -49,7 +49,6 @@ switchMenu = () => {
 function scrollToSection(section) {
   section.scrollIntoView({ block: "start" });
 }
-
 options.forEach((_option, i) => {
   _option.addEventListener("click", () => {
     scrollToSection(sections[i]);

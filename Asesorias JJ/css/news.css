@@ -259,4 +259,7 @@ div:has(.main__table) {
   .nav img:hover {
     scale: 1.1;
   }
+  .main__table {
+    max-width: 60vw;
+  }
 }

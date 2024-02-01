@@ -5,7 +5,12 @@ const barsArray = [...bars]; // conversion de la lista bars a array
 const menu = document.querySelector(".header__ul"); //objeto de la lista del menu
 let active = false; //Bool menu activado
 const options = document.querySelectorAll(".header__ul--button");
-
+const sections = [
+  "index.html#main",
+  "index.html#contact",
+  "index.html#quienSoy",
+  "index.html#services",
+];
 document.addEventListener("click", (event) => {
   if (active) {
     const currentTarget = event.target;
@@ -23,9 +28,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-button.addEventListener("click", () => {
-  switchMenu("boton");
-});
 switchMenu = () => {
   bars[0].classList.toggle("menuActive0", !active);
   bars[0].classList.toggle("menuInactive0", active);
@@ -36,3 +38,13 @@ switchMenu = () => {
   menu.style.transform = active ? "scale(1, 0)" : "scale(1, 1)";
   active = !active;
 };
+
+button.addEventListener("click", () => {
+  switchMenu();
+});
+
+options.forEach((_option, i) => {
+  _option.addEventListener("click", () => {
+    location.href = sections[i];
+  });
+});
