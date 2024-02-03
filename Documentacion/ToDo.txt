@@ -1,57 +1,22 @@
-- media queris                                <--
 - completar datos de servicios
-- poner novedades
 - llenar tabla
-- Metadatos
-- Google keyword Planner, SEMrush
+
+
+POST:
 - redireccion 301
-
-
+- sitemap
+- robots.txt
+- Paralax en BG
+- Novedades Backend
 
 
 
 SEO Tecnico:
-
-sitemap.xml y robots.txt:
-
-Considera la posibilidad de crear un archivo sitemap.xml y robots.txt para facilitar la indexación de tu sitio por parte de los motores de búsqueda.
-Google Analytics:
-
-Integra Google Analytics para realizar un seguimiento del tráfico y entender el comportamiento de los usuarios en tu sitio.
-Canonicalización:
-
-Asegúrate de que tu sitio tenga una URL canónica para evitar problemas de contenido duplicado.
-Velocidad de Carga:
 
 Realiza pruebas de velocidad de carga y optimiza imágenes y recursos para mejorar el rendimiento.
 
 
 Revisar al final:
 
-Tu código HTML parece estar bien estructurado y organizado. Aquí tienes algunos comentarios y sugerencias:
-
-Optimización del favicon: Asegúrate de incluir el favicon para mejorar la identidad visual de tu página. Puedes agregar la siguiente línea en el encabezado dentro de la etiqueta <head>:
-
-html
-Copy code
-<link rel="icon" href="ruta/al/favicicon.ico" type="image/x-icon">
-Orden de los enlaces CSS y JS: Es una buena práctica colocar primero los enlaces a tus archivos CSS y luego los enlaces a los archivos JS. Esto ayuda a que la página se cargue y renderice de manera más eficiente.
-
-Carga asíncrona de scripts: Si tu página se vuelve más compleja y quieres mejorar el rendimiento, puedes considerar agregar el atributo async o defer a tus etiquetas de script. Esto permite que la página se cargue sin esperar a que los scripts se ejecuten, mejorando la velocidad de carga.
-
-Scripts al final del body: Mover tus scripts al final del cuerpo (</body>) es una buena práctica, ya que permite que el contenido principal de la página se cargue primero.
-
-Comentarios en el código: Considera agregar comentarios en tu código, especialmente si el proyecto crece. Los comentarios pueden ser útiles para entender rápidamente el propósito de ciertas secciones o etiquetas.
-
-Metaetiquetas de Open Graph: Si planeas compartir tu sitio en redes sociales, considera agregar metaetiquetas de Open Graph para controlar cómo se muestra tu sitio cuando se comparte.
-
-Responsive Design: Asegúrate de que tu sitio sea completamente responsive, ya que has incluido la etiqueta <meta name="viewport" content="width=device-width, initial-scale=1.0" />.
-
-Etiquetas Semanticas: Asegúrate de usar etiquetas semánticas HTML5 de manera adecuada para mejorar la accesibilidad y la estructura del documento.
-
-Recuerda ajustar las rutas de los archivos según la estructura de carpetas de tu proyecto. Además, estos son solo comentarios generales y dependiendo de las necesidades específicas de tu proyecto, podrías necesitar ajustes adicionales.
 
 
-Actualizacion:
-
-- Paralax en BG
