@@ -40,3 +40,11 @@
   }
 }
 
+@keyframes panel-animation {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}

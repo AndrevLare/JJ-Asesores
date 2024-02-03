@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    <span class="Panel"></span>
     <!-- header -->
     <header class="header">
       <nav class="nav">
@@ -324,6 +325,12 @@
     <script src="js/scrollRevealManager.js"></script>
 
     <!-- Inline -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const panel = document.querySelector(".Panel");
+        panel.classList.add("DOM-Loaded");
+      });
+    </script>
     <script>
       window.onload = () => {
         const section = document.querySelectorAll(".sectionBG");

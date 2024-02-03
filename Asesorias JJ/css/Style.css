@@ -9,6 +9,17 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.Panel {
+  position: fixed;
+  inset: 0;
+  width: 125vw;
+  height: 125vh;
+  background-color: #1d4e52;
+  z-index: 999999;
+}
+.DOM-Loaded {
+  animation: panel-animation 1000ms ease-in-out forwards;
+}
 
 /* Reutilizable */
 .main__div--hr,
