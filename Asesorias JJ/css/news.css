@@ -154,9 +154,11 @@ header a {
 }
 .footer__hr {
   margin: 0;
+  width: 0;
   height: 6.5rem;
   color: #868a89;
   border-style: solid;
+  border-color: #868a89;
   border-radius: 1rem;
 }
 .footer__map__ul {
@@ -261,5 +263,9 @@ div:has(.main__table) {
   }
   .main__table {
     max-width: 60vw;
+  }
+  .footer img {
+    display: inline;
+    width: 10rem;
   }
 }
