@@ -1,22 +1,10 @@
 - completar datos de servicios
 - llenar tabla
 
-
 POST:
 - redireccion 301
 - sitemap
 - robots.txt
 - Paralax en BG
 - Novedades Backend
-
-
-
-SEO Tecnico:
-
-Realiza pruebas de velocidad de carga y optimiza imágenes y recursos para mejorar el rendimiento.
-
-
-Revisar al final:
-
-
-
+- Pruebas de velocidad
