@@ -1,7 +1,8 @@
-@media only screen and (width > 1200px) and (height > 750px) and (orientation: landscape) {
+@import url(Variables.css);
+@media only screen and (width > 1000px) and (height > 750px) and (orientation: landscape) {
   /* general */
   body {
-    background: linear-gradient(-90deg, #23797e, #2f999d);
+    background: linear-gradient(-90deg, var(--Dark-Blue), var(--Dark-Blue2));
   }
 
   /* header */
