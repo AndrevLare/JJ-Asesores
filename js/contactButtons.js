@@ -59,8 +59,8 @@ const handleClipboardButtonClick = async (buttonIndex, textToCopy) => {
 };
 
 Buttons[1].addEventListener("click", () =>
-  handleClipboardButtonClick(1, "servicio@asesoriasjj.com")
+  handleClipboardButtonClick(1, "asesoriasjj2020@gmail.com")
 );
 Buttons[2].addEventListener("click", () =>
-  handleClipboardButtonClick(2, "3166905094")
+  handleClipboardButtonClick(2, "+57 3166905094")
 );

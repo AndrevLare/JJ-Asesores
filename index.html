@@ -58,7 +58,6 @@
           <li>
             <a class="header__ul--a-desktop" href="#services">Servicios</a>
           </li>
-          <li><a class="header__ul--a-desktop" href="#news">Novedades</a></li>
         </ul>
         <button class="header__nav__menuBars SR-nav--button">
           <span class="header__nav__menuBars--bar menuBars--bar1"></span>
@@ -71,7 +70,6 @@
         <li><button class="header__ul--button">Contacto</button></li>
         <li><button class="header__ul--button">¿Quien Soy?</button></li>
         <li><button class="header__ul--button">Servicios</button></li>
-        <li><button class="header__ul--button">Novedades</button></li>
       </ul>
     </header>
 
@@ -112,7 +110,7 @@
       <!-- contacto -->
       <section class="contact" id="contact">
         <div class="contact__div SR-section">
-          <h4 class="contact--h4">Contactame</h4>
+          <h4 class="contact--h4">Contáctame</h4>
           <hr class="contact__div--hr" />
         </div>
         <div class="contact__email SR-section">
@@ -120,19 +118,23 @@
           <button class="contact__email--gmail" id="contactButtonMail">
             <i class="fa-solid fa-envelope"></i>
           </button>
-          <button class="contact__email--copy" id="contactButtonCopyMail">
-            <i class="fa-solid fa-copy" hidden=" "></i>
+          <button
+            class="contact__email--copy contact-copyButton"
+            id="contactButtonCopyMail"
+          >
+            <i class="fa-solid fa-copy"></i>
           </button>
         </div>
         <div class="contact__phone SR-section">
           <p class="contact__phone--p">+57 316 690 5094</p>
-          <button class="contact__phone--copy" id="contactButtonCopyWsp">
+          <button
+            class="contact__phone--copy contact-copyButton"
+            id="contactButtonCopyWsp"
+          >
             <i class="fa-solid fa-copy"></i>
           </button>
         </div>
-        <p class="contact--p SR-section">
-          Horario: Lunes-Sabado 8:00am - 8:00pm
-        </p>
+        <p class="contact--p SR-section">Horario: 8:00am - 9:00pm</p>
       </section>
 
       <!-- quien soy -->
@@ -294,14 +296,6 @@
         </div>
       </section>
     </div>
-    <!-- novedades -->
-    <section class="news" id="news">
-      <h4 class="news--h4">Novedades</h4>
-      <hr class="news--hr" />
-      <a href="news.html" class="news--a"
-        >Para saber las ultimas novedades de click >></a
-      >
-    </section>
 
     <!-- footer -->
     <footer class="footer">

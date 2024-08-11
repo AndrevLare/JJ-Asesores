@@ -26,8 +26,7 @@ html {
 .main__div--hr,
 .about--hr,
 .services--hr,
-.contact__div--hr,
-.news--hr {
+.contact__div--hr {
   border: #f5f6f6 solid 0.13rem;
   border-radius: 1rem;
 }
@@ -53,7 +52,7 @@ section h4 {
   justify-content: space-between;
   height: 4rem;
   font-size: 5vh;
-  border-bottom: #2e9b9e solid 0.5vh;
+  border-bottom: var(--light-Blue) solid 0.5vh;
 }
 header a {
   display: flex;
@@ -75,7 +74,7 @@ header a {
   margin-right: 1rem;
 }
 .header__nav__menuBars--bar {
-  background-color: #48b7b9;
+  background-color: var(--light-Blue2);
   display: inline-block;
   width: 2.5rem;
   height: 0.35rem;
@@ -131,7 +130,7 @@ header a {
 .header__ul li button {
   border: none;
   outline: none;
-  background-color: #050205;
+  background-color: var(--Dark-Blue);
   color: #fff;
   font-family: "Comfortaa", sans-serif;
   margin: 0 0;
@@ -140,11 +139,11 @@ header a {
   justify-content: center;
   width: 100%;
   padding: 3.5vh 0;
-  border-bottom: #81faff solid 3px;
+  border-bottom: var(--light-Blue) solid 3px;
   transition: background-color 100ms ease;
 }
 .header__ul li button:active {
-  background-color: #006a72;
+  background-color: var(--Dark-Blue2);
 }
 
 /* Main */
@@ -222,7 +221,7 @@ header a {
 
 /* Contacto*/
 .contact {
-  background: linear-gradient(315deg, #0b2528, #23797e);
+  background: linear-gradient(-90deg, var(--Dark-Blue), var(--Dark-Blue2));
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -240,31 +239,32 @@ header a {
   width: 17rem;
 }
 .contact p,
-.contact button {
+.contact__email--gmail {
   display: inline-block;
   font-size: 1rem;
 }
 .contact div p {
   width: 15em;
   padding: 0.5rem;
-  color: #aeb2b2;
-  background-color: #23797e;
-  border: #1d4e52 solid 2px;
+  color: var(--Main-White);
+  background-color: var(--light-Blue2);
+  border: var(--light-Blue3) solid 3px;
   border-radius: 0.4rem;
   transition: all 0.5s;
+  text-align: center;
 }
 .contact div button {
-  background: #23797e;
-  color: #f5f6f6;
+  background: var(--light-Blue2);
+  color: var(--Main-White);
   border-radius: 0.4rem;
   width: 2.5rem;
   padding: 0.5rem;
   text-align: center;
-  border: #1d4e52 solid 2px;
+  border: var(--light-Blue3) solid 2px;
   transition: background-color 100ms ease;
 }
 .contact div button:active {
-  background-color: #3c3d3d;
+  background-color: var(--Dark-Blue);
 }
 .contact--p {
   width: 100%;
@@ -274,6 +274,9 @@ header a {
 }
 .fa-check {
   animation: contactCheck 1000ms ease-in-out;
+}
+.contact-copyButton {
+  display: none;
 }
 /* About */
 .about {
@@ -314,7 +317,7 @@ header a {
 
 /* Servicios */
 .services {
-  background: linear-gradient(315deg, #0b2528, #23797e);
+  background: linear-gradient(-90deg, var(--Dark-Blue), var(--Dark-Blue2));
   padding-bottom: 3rem;
   scroll-margin-top: 4rem;
 }
@@ -334,8 +337,8 @@ header a {
   width: 90vw;
   height: 20rem;
   margin-top: 2rem;
-  background-color: #2f999d;
-  border: #48b7b9 dashed 0.15rem;
+  background-color: var(--Dark-Blue2);
+  border: var(--light-Blue3) dashed 0.15rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -437,7 +440,7 @@ header a {
   padding: 1rem 1rem 0.5rem 1rem;
   background-color: #0a1518;
   color: #aeb2b2;
-  border-top: #2e9b9e solid 0.5vh;
+  border-top: var(--light-Blue) solid 0.5vh;
 }
 .footer--p {
   text-align: center;

@@ -37,8 +37,7 @@
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: repeat(2, 50%);
-    border-bottom: #1e4d51 solid 0.5rem;
-    /* background: linear-gradient(90deg, #1d4044, #2f999d); */
+    border-bottom: var(--light-Blue) solid 0.5rem;
   }
   .main--span {
     display: none;
@@ -85,14 +84,18 @@
     top: 5rem;
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    background-color: #1e4d51;
+    background-color: var(--Dark-Blue2);
     margin: 7rem 1rem;
     border-radius: 1rem;
-    border: #0b2528 dashed 0.3rem;
+    border: var(--light-Blue3) dashed 0.3rem;
   }
   .contact div p {
-    border: #23797e solid 0.2rem;
+    border: var(--light-Blue3) solid 0.2rem;
     width: 30em;
+  }
+  .contact-copyButton {
+    display: inline-block;
+    font-size: 1rem;
   }
   /* about */
   .about p {
