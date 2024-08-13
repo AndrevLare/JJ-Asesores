@@ -482,3 +482,7 @@ header a {
 .footer__contact--p {
   margin-block: 0.5rem;
 }
+.footer--p a {
+  color: #868a89;
+  text-decoration: underline dotted #868a89;
+}
